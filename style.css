@@ -1,0 +1,135 @@
+/* ******************************* */
+/* GENERAL */
+/* ******************************* */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: hsl(185, 75%, 39%);
+  --text-bold-color: hsl(229, 23%, 23%);
+  --text-normal-color: hsl(227, 10%, 46%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--text-normal-color);
+  background: url(images/bg-pattern-top.svg) no-repeat -310px -500px,
+    url(images/bg-pattern-bottom.svg) no-repeat 685px 380px;
+  background-color: var(--bg-color);
+}
+
+main {
+  height: 100vh;
+
+  display: grid;
+  place-items: center;
+}
+
+/* ******************************* */
+/* PROFILE CARD */
+/* ******************************* */
+
+article {
+  max-width: 35rem;
+  background-color: #fff;
+  border-radius: 9px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.personal-info img {
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 1px;
+  border: 3px solid #fff;
+  margin-top: -55px;
+  margin-bottom: 1.6rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--text-bold-color);
+  margin-bottom: 0.8rem;
+}
+
+h1 span {
+  color: var(--text-normal-color);
+  font-weight: 400;
+  padding-left: 0.4rem;
+}
+
+p {
+  padding-bottom: 2.4rem;
+  border-bottom: 0.5px solid hsla(0, 0%, 59%, 0.25);
+  letter-spacing: 0.3px;
+}
+
+ul {
+  list-style: none;
+  padding: 2.4rem 3.2rem;
+
+  display: flex;
+}
+
+ul li {
+  flex: 1;
+}
+
+ul li div:first-child {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-bold-color);
+  margin-bottom: 0.4rem;
+}
+
+ul li div:last-child {
+  font-size: 1.1rem;
+  letter-spacing: 1.2px;
+}
+
+/* ******************************* */
+/* MEDIA QUERIES - BELOW 1280px */
+/* ******************************* */
+
+@media (max-width: 80em) {
+  body {
+    background: url(images/bg-pattern-top.svg) no-repeat -381px -523px,
+      url(images/bg-pattern-bottom.svg) no-repeat 540px 380px;
+    background-color: var(--bg-color);
+  }
+}
+
+/* ******************************* */
+/* MEDIA QUERIES - BELOW 880px */
+/* ******************************* */
+
+@media (max-width: 55em) {
+  body {
+    background: url(images/bg-pattern-top.svg) no-repeat -530px -530px,
+      url(images/bg-pattern-bottom.svg) no-repeat 380px 380px;
+    background-color: var(--bg-color);
+  }
+}
+
+/* ******************************* */
+/* MEDIA QUERIES - BELOW 512px */
+/* ******************************* */
+
+@media (max-width: 32em) {
+  body {
+    background: url(images/bg-pattern-top.svg) no-repeat -700px -530px,
+      url(images/bg-pattern-bottom.svg) no-repeat 70px 380px;
+    background-color: var(--bg-color);
+  }
+}
